@@ -34,7 +34,18 @@ TheHive : gestion d’incidents/analyses (corrélation et investigation).
 Cortex : analyse/enrichissement (playbooks analytiques).
 Un petit pictogramme type “MISP worker / automation” (selon la représentation) 
 <img width="845" height="590" alt="Image" src="https://github.com/user-attachments/assets/fbd0f1ff-232b-4188-9388-251d1c3869b4" />
-
+# Architecteur Logique 
+Un équipement de sécurité (marqué pf) relaie le trafic depuis le WAN vers le serveur Windows DC.
+Le SOC déploie des agents Wazuh :
+# Wazuh Agent (côté Windows),
+et plusieurs composants Wazuh Manager/agents dans le SOC pour collecter et analyser les événements (logs, alertes, menaces).
+Suricata est utilisé en complément pour détecter des intrusions au niveau réseau.
+Les alertes sont supervisées et corrélées via :
+# Zabbix (monitoring et visualisation des états),
+# TheHive (gestion de cas/incidents).
+# MISP sert à la Threat Intelligence (partage/enrichissement d’IOC et de TTP).
+# n8n orchestre des workflows d’automatisation (actions suite à alertes, enrichissements, traitements).
+# Cortex (et Ollama selon le schéma) aide à l’analyse/enrichissement pour accélérer l’investigation et la prise de décision.
 <img width="857" height="491" alt="Image" src="https://github.com/user-attachments/assets/394423f5-097f-4caf-9d16-4081fea6d5d2" />
 
 
