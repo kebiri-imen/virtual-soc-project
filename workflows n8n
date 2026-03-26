@@ -1,1 +1,8 @@
-<img width="1337" height="565" alt="Image" src="https://github.com/user-attachments/assets/e9beae00-0e14-42f7-a0b3-9640b18beb2c" />
+# Description des workflows (Cortex / analyse d’observables)
+Le système exécute un workflow d’investigation dès qu’une commande de lancement est déclenchée (ex. Execute workflow). À partir de cette action, le workflow récupère une tâche d’analyse contenant le contexte de l’incident et l’ensemble des informations à traiter (observable initial).
+
+Ensuite, le workflow exécute un ou plusieurs analyzers sur les observables. Un observable correspond à une donnée exploitable pour la détection et l’enrichissement (par exemple un identifiant d’IOC, une adresse, un domaine, un hash, etc.). Les analyseurs réalisent l’analyse (enrichissement, vérification, extraction d’informations) et renvoient des résultats structurés.
+
+Lorsque l’analyse produit de nouvelles informations exploitables, le workflow crée de nouveaux observables. Ces nouveaux observables sont ensuite transmis à d’autres analyzers afin de poursuivre l’enrichissement et la chaîne de traitement. Ce mécanisme permet d’automatiser la corrélation progressive des données et de réduire le temps d’investigation, en transformant une donnée initiale en un ensemble d’éléments enrichis pouvant alimenter la décision et la prise en charge dans le SOC.
+
+Enfin, les résultats s’intègrent au flux d’analyse global (enchaînement des étapes, génération/actualisation du contexte d’investigation), ce qui permet de compléter et d’affiner l’analyse de la menace de manière orchestrée.
