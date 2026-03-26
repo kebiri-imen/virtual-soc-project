@@ -41,11 +41,11 @@ Le SOC déploie des agents Wazuh :
 et plusieurs composants Wazuh Manager/agents dans le SOC pour collecter et analyser les événements (logs, alertes, menaces).
 Suricata est utilisé en complément pour détecter des intrusions au niveau réseau.
 Les alertes sont supervisées et corrélées via :
-# Zabbix (monitoring et visualisation des états),
-# TheHive (gestion de cas/incidents).
-# MISP sert à la Threat Intelligence (partage/enrichissement d’IOC et de TTP).
-# n8n orchestre des workflows d’automatisation (actions suite à alertes, enrichissements, traitements).
-# Cortex (et Ollama selon le schéma) aide à l’analyse/enrichissement pour accélérer l’investigation et la prise de décision.
+Zabbix (monitoring et visualisation des états),
+TheHive (gestion de cas/incidents).
+MISP sert à la Threat Intelligence (partage/enrichissement d’IOC et de TTP).
+n8n orchestre des workflows d’automatisation (actions suite à alertes, enrichissements, traitements).
+Cortex (et Ollama selon le schéma) aide à l’analyse/enrichissement pour accélérer l’investigation et la prise de décision.
 <img width="857" height="491" alt="Image" src="https://github.com/user-attachments/assets/394423f5-097f-4caf-9d16-4081fea6d5d2" />
 
 
