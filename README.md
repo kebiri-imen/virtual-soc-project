@@ -47,6 +47,10 @@ MISP sert à la Threat Intelligence (partage/enrichissement d’IOC et de TTP).
 n8n orchestre des workflows d’automatisation (actions suite à alertes, enrichissements, traitements).
 Cortex (et Ollama selon le schéma) aide à l’analyse/enrichissement pour accélérer l’investigation et la prise de décision.
 <img width="857" height="491" alt="Image" src="https://github.com/user-attachments/assets/394423f5-097f-4caf-9d16-4081fea6d5d2" />
+# Description des workflows
+<img width="1337" height="565" alt="Image" src="https://github.com/user-attachments/assets/e9beae00-0e14-42f7-a0b3-9640b18beb2c" />
+
+
 
 
 
