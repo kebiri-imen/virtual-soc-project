@@ -32,9 +32,10 @@ n8n : automatisation workflows (enchaînement de tâches, réponses, intégratio
 MISP : gestion de Threat Intelligence (IOC, TTP, enrichissements).
 TheHive : gestion d’incidents/analyses (corrélation et investigation).
 Cortex : analyse/enrichissement (playbooks analytiques).
-Un petit pictogramme type “MISP worker / automation” (selon la représentation) s
+Un petit pictogramme type “MISP worker / automation” (selon la représentation) 
 <img width="845" height="590" alt="Image" src="https://github.com/user-attachments/assets/fbd0f1ff-232b-4188-9388-251d1c3869b4" />
 
+<img width="857" height="491" alt="Image" src="https://github.com/user-attachments/assets/394423f5-097f-4caf-9d16-4081fea6d5d2" />
 
 
 
@@ -43,4 +44,3 @@ Un petit pictogramme type “MISP worker / automation” (selon la représentati
 
 
 
-uggère le
